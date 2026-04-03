@@ -1060,10 +1060,7 @@ pub fn initialize_pdfium_render(
         ) {
             Ok(()) => true,
             Err(msg) => {
-                log::error!(
-                    "pdfium-render::initialize_pdfium_render(): {}",
-                    msg
-                );
+                log::error!("pdfium-render::initialize_pdfium_render(): {}", msg);
 
                 false
             }
